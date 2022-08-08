@@ -1,0 +1,30 @@
+@import 'styles';
+
+body {
+  margin: 0;
+  font-family: Roboto-Regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--application-secondary-background-color);
+  color: var(--application-text-color);
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("./assets/font-families/Roboto-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  src: url("./assets/font-families/Roboto-Medium.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("./assets/font-families/Roboto-Regular.ttf") format("truetype");
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
