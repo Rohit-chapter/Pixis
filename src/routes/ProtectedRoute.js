@@ -1,16 +1,16 @@
-import React, { useContext } from 'react';
+import React from 'react';
+
+import { useAuth0 } from '@auth0/auth0-react';
 
 import { Navigate } from 'react-router-dom';
 
-// import AuthContext from 'context/authentication-context';
-
 function ProtectedRoute(props) {
 
-  // const authenticationContext = useContext(AuthContext);
+  const { isAuthenticated } = useAuth0();
 
-  // if (authenticationContext.isAuthenticated === false) {
-  //   return <Navigate to={'/'} />;
-  // }
+  if (isAuthenticated === false) {
+    return <Navigate to={'/'} />;
+  }
 
   return props.children;
 }
